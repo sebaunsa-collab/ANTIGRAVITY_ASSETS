@@ -1,0 +1,10 @@
+Estos archivos se basan en un esqueleto blueprint de js genérico, contiene también un wrapper para aplicar react native y volverlo todo terreno, su estructura es algo como:
+
+El Manifiesto: Es el contrato (las reglas).
+
+La Clase: Es el motor lógico (independiente).
+
+El Wrapper: Es la conexión con React.
+
+Su modo de ejecución es la siguiente:
+
