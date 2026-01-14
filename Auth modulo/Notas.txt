@@ -6,5 +6,29 @@ La Clase: Es el motor lógico (independiente).
 
 El Wrapper: Es la conexión con React.
 
-Su modo de ejecución es la siguiente:
+Su modo de ejecución es la siguiente...
 
+En lugar de dar instrucciones largas, usa un Prompt de Activación estandarizado. Cada vez que inicies un proyecto, pega este comando:
+
+[ACTIVATE_AUTH_WORKFLOW]: Analiza mis 3 archivos base. Proyecto actual: [FRAMEWORK] usando [FIREBASE/POCKETBASE]. Genera la implementación final de AuthService y expón los hooks necesarios.
+
+Sigue este flujo de trabajo para que el agente haga el 90% del trabajo:
+
+Paso A: Sincronización de Contexto
+Sube los archivos al chat del agente. Esto le da los "planos" de tu casa antes de empezar a construir.
+
+Paso B: Inyección de Dependencias (El Agente rellena)
+El agente detectará que AuthService tiene métodos vacíos. Él se encargará de:
+
+Instalar las librerías (npm install firebase o pocketbase).
+
+Rellenar el método init() con las credenciales que tú le des.
+
+Implementar la lógica de onAuthStateChange.
+
+Paso C: Validación de Seguridad (Control de Calidad)
+Pide al agente que realice una auditoría rápida basada en el manifiesto:
+
+"¿El objeto User que devuelve el login coincide con la estructura de mi Manifiesto?"
+
+"¿Están capturados todos los errores según mis reglas?"
